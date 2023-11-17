@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login & Signup Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="carosel-home.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="silder" style="width: 1140px; margin-top: 150px">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+              style="cursor: pointer"
+            ></li>
+            &nbsp;
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="1"
+              style="cursor: pointer"
+            ></li>
+            &nbsp;
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="2"
+              style="cursor: pointer"
+            ></li>
+          </ol>
+          <div class="carousel-inner" style="width: 1140px">
+            <div class="carousel-item active">
+              <a href="#"></a
+              ><img
+                src="https://cdn.1112delivery.com/1112one/public/images/banners/April2021/TPC_Bogo_extended_1440_TH.jpg"
+                style="width: 100%"
+                class="d-block"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="https://cdn.1112delivery.com/1112one/public/images/banners/April2021/BK_BigKing_1440.jpg"
+                  style="width: 100%"
+                  class="d-block"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="https://cdn.1112delivery.com/1112one/public/images/banners/April2021/BC_Beef_BGG_1440.jpg"
+                  style="width: 100%"
+                  class="d-block"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+          <!--Controls-->
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <button class="b-left">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <button class="b-right">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/Controls-->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo").owlCarousel({
+        items: 4,
+        lazyLoad: true,
+        nav: true,
+      });
+      $(".next").click(function () {
+        owl.trigger("owl.next");
+      });
+      $(".prev").click(function () {
+        owl.trigger("owl.prev");
+      });
+    });
+  </script>
+</html>
